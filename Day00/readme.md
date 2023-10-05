@@ -9,6 +9,7 @@
 - [Exercise 02 – Endless Sequence (or not?)](#exercise-02-–-endless-sequence-or-not)
 - [Exercise 03 – A Little Bit of Statistics](#exercise-03-–-a-little-bit-of-statistics)
 - [Exercise 04 – A Bit More of Statistics](#exercise-04-–-a-bit-more-of-statistics)
+- [Exercise 05 – Schedule](#exercise-05-–-Schedule)
 
 ## Preamble
 Java version for this bootcamp is 1.8. Make sure it's installed on your machine. You can use any IDE to write and debug your code. Your code should adhere to Oracle's standard coding practices.
