@@ -21,49 +21,6 @@
 8. [Chapter VIII](#chapter-viii) \
   8.1. [Exercise 04 – Find All](#exercise-04-find-all)
 
-# Chapter I
-### Preamble
-As you know, relational databases consist of a set of linked tables. Each table has a set of rows and columns. If there is a huge number of rows in a table, searching data with a specific value in the column may obviously take a lot of time.
-
-To solve this problem, up-to-date DBMS use an index mechanism. BTree data structure is an implementation of index concept.
-
-![BTree](misc/images/btree.png)
-
-This index may be used for a column of a table. Since a tree is always balanced, searching for any value takes the same amount of time.
-
-Rules that substantially expedite a search are as follows:
-1. Keys in each node are ordered.
-2. Root contains **1** to **t-1** keys.
-3. Any other node contains **t-1** to **2t-1** keys.
-4. If a node contains **k1, k2, ... kn** keys, it has n+1 derived classes.
-5. The first derived class and all its derived classes contain keys that are less than or equal to **k1**.
-6. The last derived class and all its derived classes contain keys that are greater than or equal to **kn**.
-7. For **2 <= i <= n**, **i**-th derived class and all its derived classes contain keys in the **(ki-1, ki) range**.
-
-Therefore, to search for a value, you just need to determine which derived class to go down to. This allows to avoid looking through the entire table.
-
-This approach apparently has a lot of specifics. For example, if new values constantly go into a table, DBMS will always rebuild the index which will slow down the system.
-
-# Chapter II
-### General Rules
-- Use this page as the only reference. Do not listen to any rumors and speculations about how to prepare your solution.
-- Now there is only one Java version for you, 1.8. Make sure that compiler and interpreter of this version are installed on your machine.
-- You can use IDE to write and debug the source code.
-- The code is read more often than written. Read carefully the [document](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf) where code formatting rules are given. When performing each task, make sure you follow the generally accepted [Oracle standards](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html).
-
-- Comments are not allowed in the source code of your solution. They make it difficult to read the code.
-- Pay attention to the permissions of your files and directories.
-- To be assessed, your solution must be in your GIT repository.
-- Your solutions will be evaluated by your bootcamp mates.
-- You should not leave in your "src" directory any other file than those explicitly specified by the exercise instructions. It is recommended that you modify your .gitignore to avoid accidents.
-- When you need to get precise output in your programs, it is forbidden to display a precalculated output instead of performing the exercise correctly.
-- Have a question? Ask your neighbor on the right. Otherwise, try with your neighbor on the left.
-- Your reference manual: mates / Internet / Google. And one more thing. There's an answer to any question you may have on Stackoverflow. Learn how to ask questions correctly.
-- Read the examples carefully. They may require things that are not otherwise specified in the subject.
-- Use System.out for output.
-- And may the Force be with you!
-- Never leave that till tomorrow which you can do today ;)
-
 # Chapter III
 ### Rules of the Day
 - Use the PostgreSQL DBMS in all tasks.
