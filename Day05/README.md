@@ -4,12 +4,6 @@
 *Takeaways: Today you will use the key mechanisms to work with PostgreSQL DBMS via JDBC*
 
 # Contents
-1. [Chapter I](#chapter-i) \
-  1.1. [Preamble](#preamble)
-2. [Chapter II](#chapter-ii) \
-  2.1. [General Rules](#general-rules)
-3. [Chapter III](#chapter-iii) \
-  3.1. [Rules of the Day](#rules-of-the-day)
 4. [Chapter IV](#chapter-iv) \
   4.1. [Exercise 00 – Tables & Entities](#exercise-00-tables-entities)
 5. [Chapter V](#chapter-v) \
